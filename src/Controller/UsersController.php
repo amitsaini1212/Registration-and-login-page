@@ -16,13 +16,14 @@ class UsersController extends AppController{
         {
             $id = $this->request->getData('id');
             $name = $this->request->getData('name');
-            $Email = $this->request->getData('Email');
+            $Email = $this->request->getData('Email ');
             $address = $this->request->getData('address');
             $phoneNumber = $this->request->getData('phoneNumber');
             $password = $this->request->getData('password');
             $confirmPassword = $this->request->getData('confirmPassword'); 
             
             // Validate name (alphabet or space)
+            // amit saini
             $error = 0;
             if (empty($name)) {
                 echo "Please enter the name."; // if name is empty
